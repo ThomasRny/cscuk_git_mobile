@@ -1,0 +1,47 @@
+/*
+	
+	== Mobile
+	== Smart App Banner
+	#smartappbanner
+
+*/
+#smartbanner {
+  display: none!important;
+}
+#smartbanner.shown {
+  display: block!important;
+  position: static!important;
+}
+#smartbanner .sb-container .sb-info {
+  top: 10px;
+}
+#smartbanner.windows .sb-close,
+#smartbanner.ios .sb-close {
+  line-height: 12px;
+  width: 15px;
+  height: 15px;
+  font-size: 1.2rem;
+}
+#smartbanner.windows .sb-button,
+#smartbanner.ios .sb-button {
+  top: 24px;
+  right: 8px;
+  font-size: 1.2rem;
+}
+#smartbanner.ios .sb-icon {
+  left: 27px;
+}
+#smartbanner.ios .sb-info {
+  left: 93px;
+}
+#smartbanner.android .sb-close {
+  top: 10px;
+}
+#smartbanner.android .sb-container .sb-button {
+  border: none;
+}
+#smartbanner.windows .sb-info {
+  top: 8px;
+}
+
+/*# sourceMappingURL=maps/mobile-smart-app-banner.css.map */

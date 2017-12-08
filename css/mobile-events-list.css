@@ -1,0 +1,340 @@
+/*
+
+		== Mobile / Events
+		== Events list (page content)
+		.evl-### (evl stands for "EVents List")
+
+*/
+.mod-catal {
+  /*
+ * ==My selection list (content of the page)
+ */
+  /* Buttons */
+  /*
+ * == Events
+ */
+}
+.mod-catal .evl-event .catal-ex-item-buttons-small .btn-primary {
+  padding: 0.6em 0.8em 0.5em 0.8em;
+}
+.mod-catal .catal-results-selectboxes + .evl-event {
+  margin-top: 1rem;
+}
+.mod-catal .evl-event {
+  padding: 1.5rem 0 0.8rem 0;
+  border-bottom: 1px solid #e3e9ea;
+}
+.mod-catal .evl-event .evl-event-buttons {
+  float: right;
+  border: none;
+}
+.mod-catal .evl-event .evl-event-media {
+  float: left;
+  margin-right: 1rem;
+}
+.mod-catal .evl-event .evl-event-content {
+  overflow: hidden;
+}
+.mod-catal .evl-event .evl-event-title {
+  border-bottom: none;
+  margin: -0.3rem 0 0 0;
+  line-height: 1.4;
+  font-size: 1.4rem;
+}
+.mod-catal .evl-event .evl-event-title a {
+  text-decoration: none;
+  color: #2b2f2f;
+}
+.mod-catal .evl-event .evl-event-date {
+  margin: 0 0 0.3rem 0;
+  line-height: 1.14285714;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+.mod-catal .evl-event .evl-event-details-list {
+  line-height: 1.83333333;
+  font-size: 1.2rem;
+}
+.mod-catal .evl-event .evl-event-details-term {
+  clear: left;
+  float: left;
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+.mod-catal .evl-event .evl-event-details-def {
+  margin-left: 0;
+}
+.mod-catal .evl-event .evl-event-details-def-theme {
+  display: inline-block;
+}
+.mod-catal .evl-event .evl-event-details-def-theme + .evl-event-details-def-theme {
+  padding-left: 0.6rem;
+}
+.mod-catal .evl-event .evl-event-details-def-theme:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  border: 2px solid #7ea203;
+  margin-right: 0.5em;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.mod-catal .catal-ex-item-stand-list {
+  display: block;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  max-width: 100%;
+  margin-top: 0;
+  padding: 0.3rem 0 0 0;
+  list-style: none;
+}
+.mod-catal .catal-ex-item-stand-item {
+  display: inline-block;
+}
+.mod-catal .catal-ex-item-stand-item .catal-ex-item-stand-link,
+.mod-catal .catal-ex-item-stand-item .catal-ex-item-stand-nolink {
+  padding-right: 0.8rem;
+  border-right: 1px solid #e3e9ea;
+}
+.mod-catal .catal-ex-item-stand-item:last-of-type .catal-ex-item-stand-link,
+.mod-catal .catal-ex-item-stand-item:last-of-type .catal-ex-item-stand-nolink {
+  padding-right: 0;
+  border-right: 0;
+}
+.mod-catal .catal-ex-item-stand-item .icon-catal {
+  margin: 0.4rem 0 0 -0.2rem;
+  vertical-align: -0.2rem;
+  font-size: 1.5rem;
+  color: #566e02;
+}
+.mod-catal .catal-ex-tooltip .catal-ex-item-stand-modal-title,
+.mod-catal .catal-ex-tooltip .catal-ex-item-cat-modal-title {
+  position: relative;
+  border-bottom: 4px solid #00525e;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+}
+.mod-catal .catal-ex-tooltip .catal-ex-item-stand-modal-title-txt,
+.mod-catal .catal-ex-tooltip .catal-ex-item-cat-modal-title-txt {
+  width: 75%;
+  margin-top: 0;
+  font-weight: bold;
+}
+.mod-catal .catal-ex-tooltip .catal-ex-item-stand-modal-title-txt span,
+.mod-catal .catal-ex-tooltip .catal-ex-item-cat-modal-title-txt span {
+  color: #0c8192;
+}
+.mod-catal .catal-ex-item-buttons.is-selected .selection-empty {
+  display: none;
+}
+.mod-catal .js-mySelection[data-action="add"] .selection-empty {
+  display: block;
+}
+.mod-catal .js-mySelection[data-action="add"] .selection-full {
+  display: none;
+}
+.mod-catal .js-mySelection[data-action="remove"] .selection-empty {
+  display: none;
+}
+.mod-catal .js-mySelection[data-action="remove"] .selection-full {
+  display: block;
+}
+.mod-catal .catal-ex-item-buttons,
+.mod-catal .catal-ex-item-buttons-small {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  -webkit-box-ordinal-group: 43;
+  -webkit-order: 42;
+      -ms-flex-order: 42;
+          order: 42;
+  border-left: 1px solid #e3e9ea;
+  padding: 0 0 0.3rem 1.4rem;
+}
+.mod-catal .catal-ex-item-buttons .btn-primary,
+.mod-catal .catal-ex-item-buttons-small .btn-primary {
+  display: block;
+  font-size: 1.3rem;
+  margin-bottom: 0.7rem;
+  padding: 0.6em 1.2rem 0.4em;
+}
+.mod-catal .catal-ex-item-buttons .icon-catal,
+.mod-catal .catal-ex-item-buttons-small .icon-catal {
+  width: 16px;
+  font-size: 1.1rem;
+  vertical-align: 0rem;
+}
+.mod-catal .catal-ex-item-buttons [class^="selection-"] .icon-catal,
+.mod-catal .catal-ex-item-buttons-small [class^="selection-"] .icon-catal {
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+}
+.mod-catal .catal-ex-item-buttons .animation-txt,
+.mod-catal .catal-ex-item-buttons-small .animation-txt {
+  position: absolute !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+}
+.mod-catal .catal-ex-item-buttons-small [class^="btn"] {
+  padding: 0.4em 1em;
+}
+.mod-catal .catal-ex-item-buttons-small [class^="btn"] .icon-catal {
+  margin-right: 0;
+}
+.mod-catal.catal-results {
+  margin-top: 0.4em !important;
+  padding-bottom: 0.8rem;
+}
+.mod-catal .catal-results-title {
+  border-bottom: 4px solid #0c8192;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.5em;
+  font-size: 1.7rem;
+  font-weight: normal;
+}
+.mod-catal .catal-results-nb {
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+.mod-catal .catal-results-selectboxes {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.mod-catal .catal-results-selectboxes label {
+  margin: 0;
+  padding-right: 1rem;
+  padding-top: 0;
+  vertical-align: top;
+  font-size: 1.6rem;
+}
+.mod-catal .catal-results-selectboxes .catal-results-number {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.mod-catal .catal-results-selectboxes .form-item label,
+.mod-catal .catal-results-selectboxes .form-item .form-select {
+  display: inline-block;
+  vertical-align: middle;
+}
+.mod-catal .catal-results-selectboxes .form-select {
+  border-width: 0 0 1px 0;
+}
+.mod-catal .catal-results-selectboxes .form-select select {
+  padding: 0 3em 0 0;
+}
+.mod-catal .catal-results-selectboxes .catal-results-index {
+  float: right;
+  margin-top: 0;
+  vertical-align: baseline;
+}
+.mod-catal .catal-results-selectboxes .catal-results-index .btn-primary {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+@-moz-document url-prefix() {
+  .mod-catal .catal-results-selectboxes .form-item label,
+  .mod-catal .catal-results-selectboxes .form-item .form-select {
+    vertical-align: top;
+  }
+  .mod-catal .catal-results-selectboxes .form-select:after {
+    top: 0.65em;
+  }
+  .mod-catal .catal-results-selectboxes .form-select select {
+    padding: 0.25em 3em 0.35em 0;
+  }
+}
+.mod-catal .crs-label {
+  display: inline-block;
+  margin-top: 0.7rem;
+  vertical-align: top;
+}
+.mod-catal .crs-select {
+  min-width: 18rem;
+  max-width: 50%;
+  border: none;
+  margin-top: 0;
+  text-align: left;
+}
+.mod-catal .crs-select:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 4.5rem;
+  border-top: 1px solid #e3e9ea;
+}
+.mod-catal .crs-select:after {
+  top: 1.1rem;
+}
+.mod-catal .crs-select .crs-toggle {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0.6rem 4.5rem 0.6rem 0.7rem;
+  text-align: left;
+  font-size: 1.4rem;
+  background: transparent;
+}
+.mod-catal .crs-list {
+  display: none;
+  height: 0;
+  margin: 0 4.5rem 0 0;
+  padding: 0;
+  list-style: none;
+  -webkit-transition: height .2s;
+  transition: height .2s;
+}
+.mod-catal .crs-list.is-open {
+  display: block;
+  height: auto;
+}
+.mod-catal .crs-list .crs-item {
+  display: block;
+  border-top: 1px solid #e3e9ea;
+  background: #ffffff;
+}
+.mod-catal .crs-list .crs-item .crs-button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0.7rem 0 0.4rem 0.7rem;
+  text-align: left;
+  font-size: 1.4rem;
+  background: transparent;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+.mod-catal .crs-list .crs-item .crs-button:focus,
+.mod-catal .crs-list .crs-item .crs-button:hover {
+  color: #910f4f;
+}
+.catalogue .catal-ex-notif-container {
+  z-index: 99999;
+  display: block;
+  width: 450px !important;
+  padding: 1.3rem 1rem 1.3rem 2rem!important;
+  color: #cc327e;
+  background: rgba(255, 255, 255, 0.99);
+}
+.catalogue .catal-ex-notif-close-btn {
+  display: none;
+}
+
+/*# sourceMappingURL=maps/mobile-events-list.css.map */

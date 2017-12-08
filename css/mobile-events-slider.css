@@ -1,0 +1,71 @@
+/*
+
+	== Mobile / Events
+	== Slider in Events Details
+	.list-articles.slider
+	.block-list-articles.slider
+
+*/
+.mod-catal .la-slider {
+  width: calc(100% + 2rem);
+  margin: 0 -1rem;
+  background-color: transparent;
+}
+.mod-catal .la-slider .la-item-img {
+  width: 100%;
+}
+.mod-catal .la-slider .la-item-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+}
+.mod-catal .la-slider .slider-item {
+  position: relative;
+  display: block;
+  padding: 0;
+  vertical-align: bottom;
+  background: transparent;
+}
+.mod-catal .la-slider .slider-pagin {
+  bottom: 0;
+  height: 3.714em;
+  line-height: 3.714em;
+  border-top: 1px solid #e3e9ea;
+  background: rgba(255, 255, 255, 0.38);
+}
+.mod-catal .la-slider .slider-pagin .slider-pagin-btn {
+  top: 0;
+  bottom: 0;
+  left: 0.7em;
+  right: 0.7em;
+}
+.mod-catal .la-slider .slider-pagin-nb {
+  line-height: 3.714em;
+  vertical-align: middle;
+}
+.mod-catal .la-slider .slider-pagin-item {
+  position: relative;
+  margin: 0 0.3em;
+  border-radius: 1px;
+}
+.mod-catal .la-slider [class*="slider-btn"] {
+  position: absolute;
+  top: 50%;
+  border: 1px solid #e3e9ea;
+  margin-top: -1.25em;
+}
+.mod-catal .la-slider [class*="slider-btn"]:focus,
+.mod-catal .la-slider [class*="slider-btn"]:hover {
+  border-color: #910f4f;
+}
+.mod-catal .la-slider .slider-btn-prev {
+  left: 0;
+}
+.mod-catal .la-slider .slider-btn-next {
+  right: 0;
+}
+
+/*# sourceMappingURL=maps/mobile-events-slider.css.map */

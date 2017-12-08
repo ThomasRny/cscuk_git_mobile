@@ -1,0 +1,169 @@
+/*
+
+	== Mobile
+ 	== Main Navigation
+ 	.main-navigation --> .mn-###
+
+ */
+.main-navigation {
+  display: none;
+  position: absolute;
+  top: 52px;
+  left: 0;
+  width: 100vw;
+  overflow-y: scroll;
+  z-index: 100;
+}
+.mn-menu {
+  background-color: #0c8192;
+  list-style: none;
+  margin: 0;
+  padding: 0 .65em;
+}
+.mn-item-lvl-1 {
+  display: block;
+  background-color: #0c8192;
+  border-bottom: 1px solid #3898a6;
+  color: #ffffff;
+  min-height: 50px;
+}
+.mn-item-lvl-1 > .mn-link {
+  padding: .75em 1em 1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.mn-item-lvl-1 .icon::before {
+  line-height: 24px;
+}
+.mn-link {
+  display: block;
+  box-sizing: border-box;
+  color: #ffffff;
+  padding: .3em .5em .4em;
+  padding-right: 2em;
+  text-decoration: none;
+}
+.mn-link.is-active {
+  background: #00525e;
+  color: #FFF;
+}
+.mn-link.is-active .mn-link-text:before {
+  background: #FFF;
+}
+.mn-link.is-active [class*="icon-"] {
+  color: #FFF;
+}
+.mn-link-text {
+  position: relative;
+}
+.mn-menu-item-avecpicto .mn-link-text {
+  margin-left: .4em;
+}
+/*
+ * Submenu (> level 2)
+ */
+.mn-item-has-submenu {
+  position: relative;
+}
+.mn-item-has-submenu::after {
+  content: '\e603';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 30px;
+  font-family: 'icon';
+  font-size: 2.5rem;
+  line-height: 1.8;
+  text-align: center;
+}
+.mn-item-has-submenu.is-open > a {
+  background: #00525e;
+}
+.mn-menu-submenu {
+  display: none;
+  margin: 0;
+  background: #0c8192;
+  color: #FFF;
+  padding: 0;
+}
+.mn-menu-submenu .mn-menu-item:last-of-type {
+  margin-bottom: 1em;
+}
+.mn-menu-submenu .mn-link {
+  display: block;
+  position: relative;
+  padding-left: 3em;
+  padding-right: 2em;
+  color: inherit;
+  -webkit-transition: all .275s;
+  transition: all .275s;
+}
+.mn-menu-submenu .mn-link.is-active {
+  padding-right: 2em;
+  background: #00525e;
+  outline: 0;
+}
+.mn-menu-submenu .is-open > a {
+  background: #00525e;
+}
+.mn-menu-submenu ul {
+  padding-left: 0;
+}
+.mn-menu-submenu .mn-link-text:before {
+  content: "";
+  position: absolute;
+  top: .5em;
+  left: -1em;
+  width: 5px;
+  height: 5px;
+  vertical-align: .3em;
+  margin-right: .85em;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background: #FFF;
+}
+.mn-item-lvl-2 .mn-menu-submenu .mn-link {
+  padding-left: 4em;
+}
+.mn-item-lvl-2 {
+  display: inline-block;
+  width: 100%;
+  padding: .01em;
+}
+.mn-item-lvl-2.mn-item-has-submenu::after {
+  height: 38px;
+  line-height: 38px;
+}
+.mn-mega-link-figure {
+  display: block;
+  width: 100%;
+  -webkit-transition: all .275s;
+  transition: all .275s;
+}
+.mn-mega-link-figure + .mn-link-text {
+  display: block;
+  padding: .25em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.mn-mega-link-figure + .mn-link-text::before {
+  display: none;
+}
+/* JS: when it's opened */
+.is-open > .mn-menu-submenu {
+  display: block;
+}
+/*
+ * Sticky
+ * When the header is stuck
+ */
+.is-stuck.site-banner .main-navigation {
+  position: fixed;
+  top: 52px;
+  left: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+/*# sourceMappingURL=maps/mobile-navigation.css.map */

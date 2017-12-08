@@ -1,0 +1,115 @@
+/*
+
+	== Mobile
+	== Newsletter
+	.newsletter-form --> .nf-##
+
+*/
+.nf-main-content {
+  padding: 1em 1em 1.5em;
+  margin: 1em 0;
+  background: #00525e;
+  color: #FFF;
+}
+.nf-title {
+  color: #FFF;
+  margin-bottom: 0.5em;
+}
+.with-results .nf-title {
+  color: #474d4e;
+}
+.nf-subtitle {
+  font-size: 1.4rem;
+}
+.nf-required {
+  font-size: 1.4rem;
+  font-style: italic;
+}
+.nf-form-txt {
+  border-radius: 2px 0 0 2px;
+}
+.nf-form-item label {
+  font-size: 1.6rem;
+}
+.nf-form-submit {
+  margin-top: 1em;
+  text-align: center;
+}
+/*
+ * Loading
+ */
+.nf-main-content.is-loading {
+  position: relative;
+}
+.nf-main-content.is-loading .nf-loading {
+  display: block;
+}
+.nf-loading {
+  display: none;
+  z-index: 20;
+  padding-top: 2em;
+  color: #FFF;
+}
+.nf-loading .spinner {
+  margin: auto;
+}
+.nf-loading-txt {
+  font-size: 1.8rem;
+  text-align: center;
+}
+/*
+ * Success/Error
+ */
+.nf-success-msg {
+  margin: 2em 0 0.5em;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.nf-success-msg p {
+  display: inline-block;
+  max-width: 500px;
+  vertical-align: middle;
+  margin-top: .25em;
+}
+.nf-success-msg .icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 82px;
+  height: 82px;
+  padding-top: .25em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-size: 3.8rem;
+  border: 4px solid;
+  border-radius: 50%;
+}
+.nf-main-content.with-results {
+  background: #f6f9f9;
+  color: #2b2f2f;
+}
+.nf-main-content .nf-success-msg.has-success .icon {
+  color: #7ea203;
+}
+.nf-main-content .nf-success-msg.has-error .icon {
+  color: #910f4f;
+}
+.nf-form-submit [class^="btn"] {
+  color: #FFF;
+  background: #2b2b2e;
+  border-color: #1b1b1d;
+}
+.nf-form-submit [class^="btn"]:focus,
+.nf-form-submit [class^="btn"]:hover,
+.nf-form-submit [class^="btn"]:active {
+  color: #FFF;
+  background-color: #434347;
+}
+.nf-form-submit [class^="btn"] .icon-checkdisk {
+  display: none;
+}
+.nf-form-submit [class^="btn"]:focus,
+.nf-form-submit [class^="btn"]:hover {
+  border-color: #1b1b1d;
+}
+
+/*# sourceMappingURL=maps/mobile-newsletter.css.map */

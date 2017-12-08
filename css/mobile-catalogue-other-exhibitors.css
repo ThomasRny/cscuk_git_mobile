@@ -1,0 +1,100 @@
+/*
+
+		== Mobile / Catalogue
+		== Other exhibitors and Other products (found after details of an exhibitor or product)
+		.catal-other-ex --> ¤
+
+*/
+.mod-catal {
+  /*
+ * == Other exhibitors (and products below, copy/paste of the &.catal-other-ex part except with -prd)
+ */
+}
+.mod-catal.catal-other-ex {
+  border-bottom: 1px solid #e3e9ea;
+  padding: 1rem;
+  /*.catal-other-ex-img {
+		//
+	}*/
+}
+.mod-catal.catal-other-ex .catal-other-ex-title {
+  border-bottom: none;
+  padding-top: 1rem;
+  color: #474d4e;
+}
+.mod-catal.catal-other-ex .catal-other-ex-list {
+  width: 100%;
+  padding-left: 0;
+}
+.mod-catal.catal-other-ex .catal-other-ex-item {
+  position: relative;
+  list-style-type: none;
+  border-top: 1px solid #e3e9ea;
+}
+.mod-catal.catal-other-ex .catal-other-ex-item:first-child {
+  border-top: none;
+}
+.mod-catal.catal-other-ex .catal-other-ex-link {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: #474d4e;
+}
+.mod-catal.catal-other-ex .catal-other-ex-media {
+  display: table-cell;
+  width: 9rem;
+}
+.mod-catal.catal-other-ex .catal-other-ex-txt {
+  display: table-cell;
+  padding-left: 0.8rem;
+  vertical-align: middle;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.mod-catal.catal-other-prd {
+  border-bottom: 1px solid #e3e9ea;
+  padding: 1rem;
+  /*.catal-other-prd-img {
+		//
+	}*/
+}
+.mod-catal.catal-other-prd .catal-other-prd-title {
+  border-bottom: none;
+  padding-top: 1rem;
+  color: #474d4e;
+}
+.mod-catal.catal-other-prd .catal-other-prd-list {
+  width: 100%;
+  padding-left: 0;
+}
+.mod-catal.catal-other-prd .catal-other-prd-item {
+  position: relative;
+  list-style-type: none;
+  border-top: 1px solid #e3e9ea;
+}
+.mod-catal.catal-other-prd .catal-other-prd-item:first-child {
+  border-top: none;
+}
+.mod-catal.catal-other-prd .catal-other-prd-link {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: #474d4e;
+}
+.mod-catal.catal-other-prd .catal-other-prd-media {
+  display: table-cell;
+  width: 9rem;
+}
+.mod-catal.catal-other-prd .catal-other-prd-txt {
+  display: table-cell;
+  padding-left: 0.8rem;
+  vertical-align: middle;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=maps/mobile-catalogue-other-exhibitors.css.map */

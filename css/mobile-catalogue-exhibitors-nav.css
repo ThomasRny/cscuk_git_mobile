@@ -1,0 +1,60 @@
+/*
+	
+		== Mobile / Catalogue
+		== "Navigation": back to results and link to New search (for prev/next see mod-mobile-catalogue-pagination.php and mobile-catalogue-pagination.less)
+		.catal-nav-ex --> ¤
+*/
+.mod-catal {
+  /* 
+ * == Nav bar above product and exhibitor details (2/3rd of width on mobile)
+ */
+}
+.mod-catal.catal-nav-ex {
+  display: table;
+  width: 66.67%;
+  padding-bottom: 1.2rem;
+  font-size: 1.4rem;
+}
+.mod-catal.catal-nav-ex .catal-nav-ex-more-link {
+  display: table-cell;
+  padding: 0 0.5rem 0 0.4rem;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  -webkit-hyphens: none;
+     -moz-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  color: #910f4f;
+}
+.mod-catal.catal-nav-ex .catal-nav-ex-more-link .icon-catal {
+  display: inline-block;
+  -webkit-transform: scale(0.75) rotate(-90deg);
+          transform: scale(0.75) rotate(-90deg);
+  margin-right: 2px;
+  color: #910f4f;
+}
+.mod-catal.catal-nav-ex .catal-nav-ex-search-new {
+  display: table-cell;
+  width: 50%;
+  white-space: nowrap;
+  text-align: center;
+}
+.mod-catal.catal-nav-ex .btn-primary {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  text-transform: none;
+}
+.mod-catal.catal-nav-ex .btn-primary .icon-catal {
+  margin: -0.3rem 0 0 1.2rem;
+}
+@media (max-width: 26em) {
+  .mod-catal.catal-nav-ex {
+    width: calc(100% - 7rem);
+  }
+  .mod-catal.catal-nav-ex .catal-nav-ex-search-new {
+    width: auto;
+  }
+}
+
+/*# sourceMappingURL=maps/mobile-catalogue-exhibitors-nav.css.map */

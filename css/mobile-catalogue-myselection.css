@@ -1,0 +1,356 @@
+/*
+
+		== Mobile / Catalogue
+		== 3 components: My selection and History / Vus récemment (sidebar) and Recently seen (bottom of content). Not about the page Mobile Catalogue / My selection list
+		.myselection --> .mysel-###
+		.history --> .hist-###
+		(not on mobile) .recently
+
+*/
+.mod-catal {
+  /*
+ * ==My selection (in sidebar: foldable, redish background, lists of EPM)
+ * @TOPROD Constraint: .myselection.mod-catal and .history.mod-catal are in a container .mysel-hist-bar.mod-catal that has a light grey background.
+ * @TOPROD One component can be removed and remaining one will be full width. If both are removed, grey bg will disappear
+ */
+}
+.mod-catal.mysel-hist-bar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: -0.65em -0.65em 0 -0.65em;
+  padding: 0.8rem;
+  background-color: #e3e9ea;
+}
+.mod-catal.myselection,
+.mod-catal.history {
+  margin-top: 0 !important;
+  padding: 0 0.6rem 1rem 0.5rem;
+  color: #ffffff;
+}
+.page-myselection .mod-catal.history {
+  padding-right: 1.2rem;
+}
+.mod-catal.myselection {
+  background-color: #910f4f;
+}
+.mod-catal.history {
+  background-color: #0c8192;
+}
+.mod-catal.myselection:not(.is-open) > .mysel-container,
+.mod-catal.history:not(.is-open) > .mysel-container,
+.mod-catal.myselection:not(.is-open) > .hist-container,
+.mod-catal.history:not(.is-open) > .hist-container {
+  display: none;
+}
+.mod-catal .mysel-title,
+.mod-catal .hist-title {
+  position: relative;
+  margin-bottom: 0;
+  padding: 0.8rem 0.5rem 0 4.1rem;
+  border-bottom: 0;
+  text-align: right;
+  font-size: 1.3rem;
+  color: inherit;
+}
+.mod-catal .mysel-title.mysel-title,
+.mod-catal .hist-title.hist-title {
+  margin-top: 0;
+}
+.mod-catal .mysel-title .icon-catal-star-full,
+.mod-catal .hist-title .icon-catal-clock {
+  position: absolute;
+  top: 0.7rem;
+  left: 0.5rem;
+  font-size: 2.1rem;
+}
+.mod-catal .mysel-title .mysel-close-btn,
+.mod-catal .hist-title .hist-close-btn {
+  margin-left: 0.3rem;
+  text-decoration: none;
+  color: #ffffff;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+.mod-catal.myselection .qty-round,
+.mod-catal.history .qty-round {
+  box-sizing: content-box;
+  position: absolute;
+  top: 0.7rem;
+  left: 1.3rem;
+  border: 1px solid;
+  background-color: #ffffff;
+}
+.mod-catal.myselection .qty-round {
+  color: #910f4f;
+}
+.mod-catal.history .qty-round {
+  color: #0c8192;
+}
+.mod-catal .mysel-container,
+.mod-catal .hist-container {
+  border: none;
+  padding: 0 1.5rem 0 1.3rem;
+  background-color: #910f4f;
+}
+.mod-catal .hist-container {
+  background-color: #0c8192;
+}
+.mod-catal .mysel-type,
+.mod-catal .hist-type {
+  position: relative;
+  margin-top: 0;
+  padding: 1.2rem 0 0 2.2rem;
+}
+.mod-catal .mysel-type .qty-round-small,
+.mod-catal .hist-type .qty-round-small {
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+}
+.mod-catal .hist-type {
+  padding-left: 0;
+}
+.mod-catal .mysel-type-title,
+.mod-catal .mysel-item-link,
+.mod-catal .mysel-item-remove,
+.mod-catal .hist-type-title,
+.mod-catal .hist-item-link,
+.mod-catal .hist-item-remove {
+  text-decoration: none;
+  color: inherit;
+}
+.mod-catal .mysel-type-title {
+  text-decoration: underline;
+}
+.mod-catal .mysel-type-title:focus,
+.mod-catal .mysel-item-link:focus,
+.mod-catal .hist-type-title:focus,
+.mod-catal .hist-item-link:focus,
+.mod-catal .mysel-type-title:hover,
+.mod-catal .mysel-item-link:hover,
+.mod-catal .hist-type-title:hover,
+.mod-catal .hist-item-link:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+.mod-catal .mysel-type-title,
+.mod-catal .hist-type-title {
+  font-weight: bold;
+}
+.mod-catal .mysel-item,
+.mod-catal .hist-item {
+  display: block;
+  position: relative;
+  padding: 0.9rem 3rem 1rem 0;
+  width: 100%;
+}
+.mod-catal .mysel-item:not(:last-child),
+.mod-catal .hist-item:not(:last-child),
+.mod-catal .mysel-item:first-child,
+.mod-catal .hist-item:first-child {
+  border-bottom: 1px solid #ffffff;
+}
+.mod-catal.myselection .mysel-item {
+  display: none;
+}
+.mod-catal.myselection .mysel-item.js-visible {
+  display: block;
+}
+.mod-catal.myselection .mysel-item.js-visible.js-no-border {
+  border: none;
+}
+.mod-catal .mysel-item-link,
+.mod-catal .hist-item-link {
+  width: 100%;
+}
+.mod-catal .mysel-item-txt,
+.mod-catal .hist-item-txt {
+  padding-right: 3em;
+  font-size: 1.4rem;
+}
+.mod-catal .mysel-item-remove,
+.mod-catal .hist-item-remove {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.8rem;
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: #ffffff;
+}
+.mod-catal .mysel-item-remove:hover,
+.mod-catal .hist-item-remove:hover {
+  color: #51082c;
+}
+.mod-catal .mysel-footer,
+.mod-catal .hist-footer {
+  padding-top: 2rem;
+  text-align: center;
+}
+.mod-catal .mysel-footer .btn-primary,
+.mod-catal .hist-footer .btn-primary,
+.mod-catal .mysel-footer .btn-invert,
+.mod-catal .hist-footer .btn-invert {
+  display: inline-block;
+  width: auto;
+  border-bottom-color: #51082c;
+  margin: 0 auto 1rem;
+  padding: 0.4em 1em;
+  font-size: 1.4rem;
+  text-transform: none;
+  background-color: #51082c;
+}
+.mod-catal .mysel-footer .btn-primary:hover,
+.mod-catal .hist-footer .btn-primary:hover,
+.mod-catal .mysel-footer .btn-invert:hover,
+.mod-catal .hist-footer .btn-invert:hover {
+  background: #ffffff;
+  color: #51082c;
+  border-bottom-color: #ffffff;
+}
+.mod-catal .mysel-footer .btn-primary .icon-catal,
+.mod-catal .hist-footer .btn-primary .icon-catal,
+.mod-catal .mysel-footer .btn-invert .icon-catal,
+.mod-catal .hist-footer .btn-invert .icon-catal {
+  margin: 0 0 0 0.5rem;
+  font-size: 1.3rem;
+  vertical-align: -0.2rem;
+}
+.mod-catal .hist-footer {
+  padding-top: 1rem;
+}
+.mod-catal .hist-footer .btn-invert {
+  border-bottom-color: #f6f9f9;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background: #f6f9f9;
+}
+.mod-catal .hist-footer .btn-invert:hover {
+  border-bottom-color: #00525e;
+  background: #00525e;
+  color: #ffffff;
+}
+.mod-catal .hist-footer .btn-invert:hover .icon-catal {
+  color: #ffffff;
+}
+.mod-catal .hist-footer .btn-invert .icon-catal {
+  vertical-align: -0.2rem;
+  font-size: 1.1rem;
+  color: #909b9d;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+.page-details .mod-catal.myselection,
+.page-details .mod-catal.history,
+.page-myselection .mod-catal.history {
+  float: right;
+  width: 3.2rem;
+  background-color: transparent;
+}
+.page-details .mod-catal .mysel-close-btn {
+  color: #910f4f;
+}
+.page-details .mod-catal .hist-close-btn,
+.page-myselection .mod-catal .hist-close-btn {
+  color: #0c8192;
+}
+.page-details .mod-catal .mysel-title,
+.page-details .mod-catal .hist-title,
+.page-myselection .mod-catal .hist-title {
+  padding: 0;
+}
+.page-details .mod-catal .mysel-title .icon-catal-star-full,
+.page-details .mod-catal .hist-title .icon-catal-clock {
+  top: -0.3rem;
+  left: auto;
+  right: 0.3rem;
+  font-size: 2.7rem;
+}
+.page-details .mod-catal .hist-title .icon-catal-clock {
+  top: 0.1rem;
+  font-size: 2.5rem;
+}
+.page-details .mod-catal .mysel-title .qty-round,
+.page-details .mod-catal .hist-title .qty-round,
+.page-myselection .mod-catal .hist-title .qty-round {
+  top: 0.2rem;
+  left: auto;
+  right: 0;
+}
+.page-details .mod-catal .mysel-title-txt,
+.page-details .mod-catal .hist-title-txt,
+.page-myselection .mod-catal .hist-title-txt {
+  position: absolute !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+}
+.page-myselection .mod-catal .hist-title .icon-catal-clock {
+  top: 0.1rem;
+  left: auto;
+  right: 0.3rem;
+  font-size: 2.5rem;
+}
+.mod-catal .mysel-modal-title,
+.mod-catal .hist-modal-title {
+  position: relative;
+  border-bottom: 4px solid #ffffff;
+  padding: 0.9rem 0 1.1rem 3.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.mod-catal .mysel-modal-title .m-btn-to-close,
+.mod-catal .hist-modal-title .m-btn-to-close {
+  position: static;
+  float: right;
+  width: auto;
+  height: auto;
+  margin-right: 0.3rem;
+  padding: 0;
+  color: #ffffff;
+  background-color: transparent;
+  border-radius: 0;
+}
+.mod-catal .mysel-modal-title .m-btn-to-close:focus,
+.mod-catal .hist-modal-title .m-btn-to-close:focus,
+.mod-catal .mysel-modal-title .m-btn-to-close:hover,
+.mod-catal .hist-modal-title .m-btn-to-close:hover {
+  color: #EEE;
+  background-color: transparent;
+  outline: none;
+}
+.mod-catal .mysel-modal-title .icon-catal-star-full,
+.mod-catal .hist-modal-title .icon-catal-star-full,
+.mod-catal .mysel-modal-title .icon-catal-clock,
+.mod-catal .hist-modal-title .icon-catal-clock {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  font-size: 2.3rem;
+}
+.mod-catal .mysel-modal-title .qty-round,
+.mod-catal .hist-modal-title .qty-round {
+  box-sizing: content-box;
+  position: absolute;
+  top: 0.7rem;
+  left: 1.3rem;
+  border: 1px solid;
+  font-size: 1rem;
+  background-color: #ffffff;
+}
+
+/*# sourceMappingURL=maps/mobile-catalogue-myselection.css.map */

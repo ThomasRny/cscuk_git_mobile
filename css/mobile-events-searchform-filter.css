@@ -1,0 +1,481 @@
+/*
+ *
+ * @BUGFIX iOS 7 and 8 (at least) / Forbids scrolling of page under this modal (seen too much on iPhone 5 / iOS 8.3).
+ * Drawback: after closing the modal, header is displayed in top of viewport even if we scrolled down the page before opening modal.
+ * That's OK with extended searchform modal (which is above the fold or quite) but wouldn't with a contact modal that can be opened
+ *
+ */
+html.is-modal-opened {
+  overflow: scroll !important;
+  height: 100% !important;
+}
+html.is-modal-opened > body {
+  height: 100% !important;
+  overflow: hidden !important;
+}
+.mod-catal {
+  /* ----------------------------------- */
+  /* == Event search form / filtering    */
+  /* == MODULE STYLES                    */
+  /* ----------------------------------- */
+  /* Advanced form */
+}
+.mod-catal [class^="icon-catal-"],
+.mod-catal [class*=" icon-catal-"],
+.mod-catal .evsf-as-list-filters a .evsf-as-list-filters-next-lvl::after,
+.mod-catal .evsf-has-sub-items > .evsf-choice-container .evsf-next-lvl:after {
+  font-family: 'icon-catal';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.mod-catal .evsf-visually-hidden {
+  position: absolute;
+  left: -9999em;
+  text-indent: -9999em;
+}
+.mod-catal.events-search-form {
+  font-family: Gudea, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+.mod-catal.events-search-form a,
+.mod-catal.events-search-form button,
+.mod-catal.events-search-form input {
+  -webkit-transition: all .275s;
+  transition: all .275s;
+}
+.mod-catal.events-search-form * {
+  box-sizing: border-box;
+}
+.mod-catal.events-search-form a {
+  color: #18759F;
+}
+.mod-catal.events-search-form a:hover,
+.mod-catal.events-search-form a:focus {
+  color: #0E465F;
+}
+.mod-catal.events-search-form input[type="text"],
+.mod-catal.events-search-form input[type="search"],
+.mod-catal.events-search-form input[type="password"],
+.mod-catal.events-search-form input[type="tel"],
+.mod-catal.events-search-form input[type="mail"] {
+  padding: 5px 20px;
+  background: #FFF;
+  border: 1px solid #C0C0C0;
+  -webkit-appearance: none;
+}
+.mod-catal.events-search-form button,
+.mod-catal.events-search-form input[type="submit"] {
+  padding: 5px 20px;
+  border: 0 none;
+  text-align: center;
+  font-weight: bold;
+  color: #FFF;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+.mod-catal.events-search-form button:hover,
+.mod-catal.events-search-form input[type="submit"]:hover,
+.mod-catal.events-search-form button:focus,
+.mod-catal.events-search-form input[type="submit"]:focus {
+  background: #910f4f;
+}
+.mod-catal.events-search-form .evsf-remove-filters {
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  color: #00525e;
+  background: #e3e9ea;
+  border-radius: 0;
+}
+.mod-catal.events-search-form .evsf-remove-filters:hover,
+.mod-catal.events-search-form .evsf-remove-filters:focus {
+  background: #d2dbdd;
+}
+.mod-catal.events-search-form .evsf-remove-filters.hidden {
+  display: none;
+}
+.mod-catal .evsf-intro-title {
+  margin: 0 0 1rem 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #474d4e;
+}
+.mod-catal .evsf-intro-title label {
+  margin: 0;
+  font-size: inherit;
+}
+.mod-catal .evsf-form-zone {
+  margin: 2.5rem 0 1rem 0;
+  padding: 0.6rem 1.4rem 1.4rem 1.4rem;
+  border: 4px solid #e3e9ea;
+  background: #f6f9f9;
+}
+.mod-catal .evsf-search-line {
+  margin-bottom: 1.5rem;
+  border-radius: 0;
+}
+.mod-catal .evsf-search-line #evsf_simple_search {
+  width: 100%;
+  border: 1px solid #e3e9ea;
+  padding: 9px 5px;
+  font-size: 1.6rem;
+  color: #474d4e;
+  background-color: #ffffff;
+}
+.mod-catal .evsf-search-line #evsf_simple_search::-webkit-input-placeholder {
+  font-style: italic;
+}
+.mod-catal .evsf-search-line #evsf_simple_search::-moz-placeholder {
+  font-style: italic;
+}
+.mod-catal .evsf-search-line #evsf_simple_search:-ms-input-placeholder {
+  font-style: italic;
+}
+.mod-catal .evsf-search-line #evsf_simple_search::placeholder {
+  font-style: italic;
+}
+.mod-catal .evsf-label-like {
+  color: #2A2A2A;
+}
+.mod-catal .evsf-ampm {
+  margin: 0;
+}
+.mod-catal .evsf-ampm .evsf-ampm-title {
+  position: absolute !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+}
+.mod-catal .evsf-ampm .evsf-ampm-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 0;
+  padding-left: 0;
+}
+.mod-catal .evsf-ampm .evsf-ampm-item {
+  margin-top: 0;
+}
+.mod-catal .evsf-ampm .evsf-ampm-item + .evsf-ampm-item {
+  margin-left: 1rem;
+}
+.mod-catal .evsf-ampm .checkbox-title {
+  font-size: 1.2rem;
+}
+.mod-catal [class^="evsf-btn"],
+.mod-catal [class*=" evsf-btn"] {
+  display: inline-block;
+  padding: 5px;
+  color: #FFF;
+  background: #C14153;
+}
+.mod-catal [class^="evsf-btn"]:hover,
+.mod-catal [class*=" evsf-btn"]:hover,
+.mod-catal [class^="evsf-btn"]:focus,
+.mod-catal [class*=" evsf-btn"]:focus {
+  background: #9B3343;
+}
+.mod-catal .evsf-advanced-search {
+  position: relative;
+  margin-top: 1rem;
+}
+.mod-catal .evsf-advanced-search * {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.mod-catal .evsf-as-filters {
+  overflow: auto;
+  z-index: 155;
+  position: fixed;
+  top: 0 !important;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  margin: 0 !important;
+  padding: 0 1rem;
+  background-color: #ffffff;
+}
+.mod-catal .evsf-as-filters .m-btn-to-close {
+  position: static;
+  float: right;
+  width: auto;
+  height: auto;
+  padding: 0;
+  color: #910f4f;
+  background: transparent;
+  border-radius: 0;
+}
+.mod-catal .evsf-as-filters .m-btn-to-close:focus,
+.mod-catal .evsf-as-filters .m-btn-to-close:hover {
+  color: #cc327e;
+  background-color: transparent;
+  outline: none;
+}
+.mod-catal .evsf-as-filters .evsf-as-filters-group-title {
+  border-bottom: 4px solid #00525e;
+  margin: 0;
+  padding-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #474d4e;
+}
+.mod-catal .evsf-as-filters .evsf-as-filters-title {
+  margin-top: 0.8rem;
+  line-height: 1.5;
+}
+.mod-catal .evsf-as-filters .catal-results-title {
+  border-bottom: 1px solid #e3e9ea;
+  margin: 0;
+  padding: 1rem 0;
+}
+.mod-catal .evsf-as-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 1rem;
+}
+.mod-catal .evsf-as-header .evsf-as-title {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  height: 3.9rem;
+  margin-right: 0.4rem;
+  padding: 0 1rem 0 4.2rem;
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background: #474d4e;
+  color: #ffffff;
+}
+.mod-catal .evsf-as-header .evsf-as-title:after,
+.mod-catal .evsf-as-header .evsf-as-title:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 1.2rem;
+  margin-top: -2px;
+  background: #ffffff;
+  width: 21px;
+  height: 5px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.mod-catal .evsf-as-header .evsf-as-title:focus {
+  background: #474d4e;
+}
+.mod-catal .evsf-as-header .evsf-as-title:focus:hover {
+  background: #910f4f;
+}
+.mod-catal .evsf-as-header .evsf-btn-search {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  height: 3.9rem;
+  margin-left: 0.4rem;
+  padding: 0 1rem 0 2rem;
+  text-align: right;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background: #910f4f;
+  color: #ffffff;
+}
+.mod-catal .evsf-as-header .evsf-btn-search .evsf-btn-search-text {
+  padding-right: 1.5rem;
+  background: inherit;
+}
+.mod-catal .evsf-as-header .evsf-btn-search .icon-catal {
+  vertical-align: middle;
+  font-size: 2.4rem;
+}
+.mod-catal .evsf-as-header .evsf-btn-search:hover {
+  background: #cc327e;
+}
+.mod-catal .evsf-as-header .evsf-as-title:after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.mod-catal .evsf-as-header.is-closed + .evsf-as-filters {
+  border-top: 0;
+}
+.mod-catal .evsf-filter-title {
+  border-bottom: none;
+  margin: 0.6rem 0 1rem 0;
+  color: #2b2f2f;
+}
+.mod-catal .evsf-filter-group {
+  border-bottom: 1px solid #e3e9ea;
+  margin: 1.2rem 0 0 0;
+  padding-bottom: 1.5rem;
+}
+.mod-catal .evsf-filter-group-title {
+  position: absolute !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+}
+.mod-catal .evsf-filter-list {
+  margin: 0;
+  padding: 0;
+}
+.mod-catal .evsf-filter-list::after {
+  content: "";
+  display: table;
+  clear: both;
+  border-collapse: collapse;
+}
+.mod-catal .evsf-filter-item {
+  list-style-type: none;
+  float: left;
+  width: 50%;
+  padding: 0 0 1rem 0.5rem;
+}
+.mod-catal .evsf-filter-item:nth-child(odd) {
+  clear: left;
+  padding-left: 0;
+  padding-right: 0.5rem;
+}
+.mod-catal .evsf-filter-item .checkbox-title {
+  padding-left: 2.3rem;
+}
+.mod-catal .evsf-as-submit {
+  clear: both;
+  margin: 1.3rem 0 2em 0;
+  text-align: right;
+}
+.mod-catal .evsf-as-submit .evsf-as-submit-btn {
+  border-bottom: 4px solid #570930;
+  padding: 0.4em 2em;
+  font-weight: normal;
+  color: #ffffff;
+  background-color: #910f4f;
+}
+.mod-catal .evsf-as-submit .evsf-as-submit-btn:focus,
+.mod-catal .evsf-as-submit .evsf-as-submit-btn:hover,
+.mod-catal .evsf-as-submit .evsf-as-submit-btn:active {
+  color: #ffffff;
+  background-color: #cc327e;
+  border-color: #99255e;
+}
+.mod-catal .evsf-as-activated-filters {
+  overflow: hidden;
+  padding: 0.8rem 0 0.2rem 0;
+  border-bottom: 1px solid #DDE1E6;
+}
+.mod-catal .evsf-as-activated-filters.hidden {
+  display: none;
+}
+.mod-catal .evsf-as-af-text {
+  margin: 5px 7px 0 0;
+  color: #2A2A2A;
+}
+.mod-catal .evsf-as-af-filters {
+  white-space: normal;
+}
+.mod-catal .evsf-as-af-filters > span {
+  position: relative;
+  display: inline-block;
+  padding: 6px 27px 6px 11px;
+  margin: 0 4px 8px 0;
+  background: #f6f9f9;
+  font-size: 1.1rem;
+  color: #474d4e;
+  border-radius: 0;
+}
+.mod-catal .evsf-as-af-filters > span .evsf-tag-filter-remove {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 26px;
+  padding: 0;
+  color: #0c8192;
+  background: #f6f9f9;
+}
+.mod-catal .evsf-as-af-filters > span .evsf-tag-filter-remove .icon-catal-cross {
+  vertical-align: -0.2rem;
+}
+.mod-catal .evsf-all-filters {
+  white-space: normal;
+}
+.mod-catal .evsf-all-filters .icon-catal-cross {
+  vertical-align: -0.1rem;
+  color: #0c8192;
+}
+.mod-catal .evsf-all-filters .icon-catal-cross::after {
+  font-size: 1.1rem;
+}
+.mod-catal .evsf-remove-filters .icon-catal-cross {
+  margin-left: 1rem;
+}
+.mod-catal .evsf-loader-layer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 999999;
+}
+.mod-catal .evsf-loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+.mod-catal .evsf-loader svg path,
+.mod-catal .evsf-loader svg rect {
+  fill: #FFF;
+}
+.mod-catal .evsf-as-filter-name {
+  font-size: 1.4rem;
+}
+.mod-catal .evsf-search-line {
+  position: relative;
+}
+.mod-catal .evsf-search-plus {
+  position: absolute;
+  bottom: -5.8rem;
+  right: 2rem;
+  text-decoration: none;
+}
+.mod-catal .evsf-search-plus::after {
+  padding-left: 1rem;
+  content: '\ea15';
+  font-family: 'icon-catal';
+  font-size: 1.3rem;
+  vertical-align: -0.2rem;
+}
+.mod-catal .evsf-search-plus:hover .evsf-search-plus-txt {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=maps/mobile-events-searchform-filter.css.map */

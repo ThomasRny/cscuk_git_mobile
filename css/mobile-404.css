@@ -1,0 +1,35 @@
+/*
+	
+	== Mobile
+	== Error 404
+	.error-page --> .ep-##
+
+*/
+.ep-illustration {
+  display: none;
+}
+.error-page .list-articles.has-2col > .la-item {
+  width: 41%;
+}
+.error-page .list-articles.has-2col .la-column .la-item-content {
+  padding-right: 4em;
+}
+.error-page .main-title-with-link {
+  border-bottom: 0;
+  text-align: center;
+}
+.error-page .main-title-with-link > .main-title {
+  margin-bottom: 1em;
+  float: none;
+  text-transform: none;
+  text-align: left;
+  border-bottom: 1px solid #e3e9ea;
+}
+.error-page .main-title-with-link [class^="link-"] {
+  float: none;
+}
+.ep-form {
+  margin: 2em -0.65em;
+}
+
+/*# sourceMappingURL=maps/mobile-404.css.map */

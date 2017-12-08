@@ -1,0 +1,105 @@
+/*
+	
+	== Mobile
+	== Social links
+
+	.social-sharing --> .ss-##
+	==> to share an article (@article)
+
+
+*/
+.ss-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row wrap;
+      -ms-flex-direction: row wrap;
+          flex-direction: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.ss-item {
+  display: block;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.ss-item + .ss-item {
+  margin-left: .25em;
+}
+[class*="ss-link"] {
+  display: block;
+  padding: 0.5em 0.35em;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #FFF;
+}
+[class*="ss-link"]:focus,
+[class*="ss-link"]:hover {
+  color: #FFF;
+}
+[class*="ss-link"] .icon {
+  margin-right: 2em;
+}
+.ss-item-txt {
+  text-transform: none;
+  font-weight: bold;
+}
+.ss-link-facebook {
+  background: #36589b;
+  border-bottom-color: #263e6e;
+}
+.ss-link-facebook:focus,
+.ss-link-facebook:hover {
+  background: #294375;
+  border-bottom-color: #1c2d4f;
+}
+.ss-link-twitter {
+  background: #31aae1;
+  border-bottom-color: #1b88ba;
+}
+.ss-link-twitter:focus,
+.ss-link-twitter:hover {
+  background: #1c8fc3;
+  border-bottom-color: #166e96;
+}
+.ss-link-pinterest {
+  background: #cb2027;
+  border-bottom-color: #96181d;
+}
+.ss-link-pinterest:focus,
+.ss-link-pinterest:hover {
+  background: #9f191f;
+  border-bottom-color: #731216;
+}
+.ss-link-mail {
+  background: #0c8192;
+  border-bottom-color: #074f59;
+}
+.ss-link-mail:focus,
+.ss-link-mail:hover {
+  background: #085763;
+  border-bottom-color: #042e34;
+}
+/*
+ * Social sharing only
+ */
+.social-sharing {
+  margin: 1em 0;
+  padding: 1em 0;
+  border: 1px solid #e3e9ea;
+  border-width: 1px 0;
+}
+.ss-title {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  color: #474d4e;
+}
+
+/*# sourceMappingURL=maps/mobile-social.css.map */

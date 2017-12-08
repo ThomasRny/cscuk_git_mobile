@@ -1,0 +1,123 @@
+/*
+
+	== Mobile
+	== Header
+*/
+.site-banner {
+  position: relative;
+  color: #FFF;
+  background: #003239;
+}
+.site-banner .inside {
+  position: relative;
+  height: 52px;
+  padding: 10px 0;
+}
+.site-banner .inside::after {
+  content: "";
+  display: table;
+  clear: both;
+  border-collapse: collapse;
+}
+.site-banner .icon::before {
+  line-height: 52px;
+}
+.site-banner ~ .allows-over-stuck {
+  position: relative;
+  z-index: 155;
+}
+.sb-menu-trigger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 52px;
+  text-align: center !important;
+  width: 47px;
+}
+.is-open .sb-menu-trigger {
+  background-color: #0c8192;
+}
+.sb-branding,
+.sb-place-date {
+  float: left;
+  font-family: "League Gothic", Impact, Arial, sans-serif;
+}
+.sb-branding {
+  max-width: 165px;
+  width: 100%;
+  padding: 2px 0 0 52px;
+  background: #003239;
+}
+.sb-branding-link {
+  display: block;
+  width: 113px;
+}
+.sb-place-date {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  padding-top: 12px;
+}
+/* date */
+.sb-date {
+  font-size: 2rem;
+  line-height: 1;
+  margin-top: 0;
+}
+.sb-date-period,
+.sb-date-days,
+.sb-date,
+.sb-place {
+  display: inline-block;
+  vertical-align: top;
+}
+.sb-date-label {
+  position: absolute;
+  top: -7px;
+  left: 98px;
+}
+.sb-date-days {
+  margin-top: -0.1em;
+  padding: .05em .3em 0;
+  line-height: 1;
+  background: #7ea203;
+}
+.sb-date-period {
+  padding: .25em .45em .2em;
+  margin-left: -0.5em;
+  margin-top: .275em;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #003239;
+  background: #0c8192;
+}
+/* place */
+.sb-place {
+  display: block;
+  margin: -0.75em 0 0;
+  padding: .25em 0 .75em;
+  font-family: Gudea, Helvetica, Arial, sans-serif;
+  font-size: .8rem;
+}
+.sb-place span {
+  line-height: 1.2;
+}
+.sb-place-city {
+  font-size: .8rem;
+}
+/*
+ * Sticky
+ * When the header is stuck
+ */
+.is-stuck.site-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 20;
+}
+.is-stuck.site-banner ~ [id="main"] {
+  margin-top: 55px;
+}
+
+/*# sourceMappingURL=maps/mobile-header.css.map */

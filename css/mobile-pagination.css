@@ -1,0 +1,97 @@
+/*
+
+	== Mobile 
+	== Pagination
+
+*/
+.pagination {
+  display: table;
+  list-style: none;
+  padding: 0;
+  margin: 1em 0;
+  text-align: center;
+  color: #474d4e;
+  width: 100%;
+}
+.pagination a {
+  display: inline-block;
+  padding: 0.35em 0.5em;
+  text-decoration: none;
+  color: #474d4e;
+}
+.pagination a:focus,
+.pagination a:hover {
+  color: #910f4f;
+  background: #f4f4f4;
+}
+.pagination .icon {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #910f4f;
+}
+.pagin-item {
+  display: table-cell;
+  margin: 0 0.25em;
+}
+.pagin-item.pagin-prev {
+  text-align: left;
+}
+.pagin-item.pagin-prev .icon {
+  margin-right: 1em;
+}
+.pagin-item.pagin-next {
+  text-align: right;
+}
+.pagin-item.pagin-next .icon {
+  margin-left: 1em;
+}
+.pagin-item.is-active a {
+  background: #910f4f;
+  color: #ffffff;
+  text-decoration: none;
+}
+.pagin-item.is-inactive a {
+  display: none;
+}
+.pagin-item > .pagin-actual {
+  color: #910f4f;
+  font-weight: 700;
+}
+/* Paginnation Ajax */
+.pagination-grid {
+  overflow: hidden;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.pagination-grid .grid-list-articles {
+  position: relative;
+  left: 0;
+  -webkit-transition: left 0.5s ease-in;
+  transition: left 0.5s ease-in;
+}
+.pagination-grid .grid-list-articles.pagination-grid-prev {
+  left: -100%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  -webkit-transition: left 0.5s ease-out;
+  transition: left 0.5s ease-out;
+}
+.pagination-grid .grid-list-articles.pagination-grid-move {
+  opacity: 0;
+}
+.pagination-grid .grid-list-articles.pagination-grid-next {
+  left: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  -webkit-transition: left 0.5s ease-out;
+  transition: left 0.5s ease-out;
+}
+
+/*# sourceMappingURL=maps/mobile-pagination.css.map */

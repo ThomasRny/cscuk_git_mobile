@@ -1,0 +1,57 @@
+/*
+
+	== Mobile
+	== Global layout
+
+*/
+body {
+  padding: 0;
+}
+.wrapper,
+.site-wrapper {
+  max-width: 1060px;
+  margin: auto;
+}
+.site-banner .inside,
+.header-navigation .inside,
+.site-footer .inside {
+  max-width: 1060px;
+  padding: 0 1.5em;
+  margin: 0 auto;
+}
+/* Site wrapper */
+.site-wrapper {
+  display: table;
+  position: relative;
+  z-index: 2;
+  margin-bottom: -1.6em;
+  background: #FFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  padding: 1.1em;
+}
+.site-wrapper .block:not(:first-child) {
+  margin-top: 2em;
+}
+.site-wrapper .zone {
+  display: table-row;
+}
+/*
+ * Zone
+ */
+.layout-2-col {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.layout-2-col > * {
+  display: table-cell;
+  vertical-align: top;
+}
+.layout-2-col [id="zone2"] {
+  width: 74.5%;
+}
+.layout-2-col [id="zone3"] {
+  padding-left: 1.125em;
+}
+
+/*# sourceMappingURL=maps/mobile-layout.css.map */
