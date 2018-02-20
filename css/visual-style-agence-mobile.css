@@ -1376,6 +1376,10 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
     margin-top: 2rem !important;
 }
 
+.article-content blockquote .icon-quote {
+    display: none;
+}
+
 .article-content h4 {
     margin-bottom: 2rem !important;
 }
