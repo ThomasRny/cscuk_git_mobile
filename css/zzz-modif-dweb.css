@@ -160,3 +160,96 @@
 .an-item-previous a:hover .an-item-content {
     margin-right: 0em;
 }
+
+/**** SITEMAP ****/
+
+.content-list-bullet li::before {
+    background: #0645F9;
+}
+		.sitemap a.sm-item-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #001E60;
+    text-transform: none;
+    font-size: 1.5em;
+    margin-top: 0 !important;
+}
+
+.sitemap .layout-2-col, .partner .layout-2-col {
+    padding-top: 127px;
+}
+
+.sitemap .zone-hero{
+
+display:none;
+
+}
+
+.sitemap h1 span.ezstring-field, .partner-list h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #001E60;
+    text-transform: none;
+    font-weight: bold;
+    font-size: 4.2rem !important;
+    padding-top: 1em;
+}
+
+/**** Liste des partenaires ****/
+.partner img.pl-item-illust {
+    background: transparent;
+}
+
+.partner-list h3.pl-item-title {
+    border-bottom: 1px solid #000000;
+    padding-top: 26px;
+}
+
+/*** BANDEAU COOKIE ****/
+
+.cc-cookies .cc-cookie-accept {
+    padding: 0 22px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    font-weight: 400;
+    font-size: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    line-height: 27px;
+    position: initial;
+    top: 2em;
+    right: .5em;
+    margin-top: 3px;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    text-indent: initial;
+    text-align:center;
+}
+.cc-cookies .cc-cookie-accept:hover {
+background-color:#ffffff;
+color:#000000;
+}
+
+.cc-cookies .inside {
+    max-width: 830px;
+    color: #fff;
+    position: relative;
+    text-align:left;
+}
+
+.cc-cookies {
+    padding: 1em 5%;
+    background-color: #f6c54f;
+    top: auto;
+    z-index: 999;
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.35;
+    letter-spacing: .05em;
+}
+a.cc-cookie-link {
+    text-decoration: underline;
+}
+
