@@ -1145,6 +1145,8 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
 
 .gla-item-tag {
     background: #08205C;
+    top: 0;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .gla-item > a {
@@ -1155,7 +1157,7 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
 }
 .gla-item-btn {
     text-align: center;
-    margin-top: 2rem !important;
+    margin-top: 3rem !important;
 }
 
 .gla-btn-read-more {
