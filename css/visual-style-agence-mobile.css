@@ -1489,6 +1489,6 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
 }
 
 
-.icon-short-arrow-left {
+.bn-item .icon.icon-short-arrow-left {
     color: #0645F9;
 }
