@@ -1492,3 +1492,13 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
 .bn-item .icon.icon-short-arrow-left {
     color: #0645F9;
 }
+
+/* Partner Gallery */
+
+.mobile-partner-gallery .slider-pagin-btn .btn {
+    background-color: #0645F9;
+}
+
+.pg-pagin-nb .active {
+    color: #0645F9;
+}
