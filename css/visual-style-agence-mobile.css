@@ -413,20 +413,13 @@ h3, h4 {
 .mn-menu-line {
     padding-top: 0;
 }
-/*
-.mn-menu-lvl1:after {
-    content: "";
-    background: url(img/logo-CSC_UK-menu.svg);
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    z-index: 1000;
-    width: 224px;
-    height: 305px;
-}*/
+
+.mn-menu-submenu .mn-link.is-active {
+    background: #0645F9;
+}
+.mn-menu-submenu .mn-link-text:before {
+    display: none;
+}
 
 .mn-menu-lvl2 {
     left: inherit;
