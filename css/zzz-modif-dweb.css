@@ -18,7 +18,9 @@
     background:rgba( 6, 69, 249, .8);
     color:#ffffff;
 }
-
+.article-wrapper .article-navigation .an-item-previous, .article-wrapper .article-navigation .an-item-next {
+    width: 100%;
+}
 .article-wrapper .article-navigation .an-list {
     display: block;
     width: 100%;
@@ -127,7 +129,7 @@
 .article-wrapper .article-navigation .an-item-previous .an-item-content {
     padding: 0px 0px 0px 0px;
     text-align: right;
-    width: 61%;
+    width: 100%;
     display: inline-block;
     left: 0px;
     margin-left: -6px;
@@ -159,6 +161,9 @@
 }
 .an-item-previous a:hover .an-item-content {
     margin-right: 0em;
+}
+.article-wrapper .article-navigation .an-item-publication{
+display:none;
 }
 
 /**** SITEMAP ****/
