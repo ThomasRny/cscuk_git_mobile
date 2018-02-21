@@ -142,10 +142,10 @@
 /* -----------------------------
  * Appel du plugin alsaAccordion
  * ----------------------------- */
-var $accordionContainer = $('.js-accordion');
+/*var $accordionContainer = $('.js-accordion');
 if ($accordionContainer.length) {
   $accordionContainer.alsaAccordion({
     isOpenClass: 'js-ah-is-opened',
     isCloseClass: 'js-ah-is-closed',
   });
-}
+}*/
