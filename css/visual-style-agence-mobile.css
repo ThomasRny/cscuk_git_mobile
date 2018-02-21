@@ -141,7 +141,7 @@ a.txt-lightblue:hover {
 
 /* HEADINGS */
 
-h2, h2.main-title, h2.la-main-title {
+h2, h2.main-title, h2.la-main-title, .main-title-with-link > .main-title {
     font-size: 2.8rem !important;
     font-family: 'Poppins', sans-serif !important;
     font-weight: 600;
@@ -1107,6 +1107,7 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
     position: relative;
     padding-bottom: 1.5rem;
     left: 0;
+    background: none;
 }
 
 .gla-item > a {
@@ -1146,6 +1147,7 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
 .gla-item-tag {
     background: #08205C;
     top: 0;
+    left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
 
@@ -1158,6 +1160,10 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
 .gla-item-btn {
     text-align: center;
     margin-top: 3rem !important;
+}
+
+.gla-item-content p:not(.gla-item-btn) {
+    margin-top: 1.25rem;
 }
 
 .gla-btn-read-more {
@@ -1480,4 +1486,9 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
 
 .article_list .layout-2-col {
     padding-top: 90px;
+}
+
+
+.icon-short-arrow-left {
+    color: #0645F9;
 }
