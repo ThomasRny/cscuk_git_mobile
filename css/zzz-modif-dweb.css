@@ -4,7 +4,7 @@
 .article-wrapper .article-navigation .an-item-next .an-item-content {
     padding: 0px 0px 0px 0px;
     text-align: right;
-    width: 61%;
+    width: 100%;
     display: inline-block;
     left: 0;
     margin-left: -20px;
@@ -18,6 +18,15 @@
     background:rgba( 6, 69, 249, .8);
     color:#ffffff;
 }
+
+.article-wrapper .article-navigation .an-item-next .an-item-title {
+    padding: 2.2em 4em 2.2em 1.6em;
+}
+
+.article-wrapper .article-navigation .an-item-previous .an-item-title {
+    padding: 2.2em 1.6em 2.2em 4em;
+}
+
 .article-wrapper .article-navigation .an-item-previous, .article-wrapper .article-navigation .an-item-next {
     width: 100%;
 }
