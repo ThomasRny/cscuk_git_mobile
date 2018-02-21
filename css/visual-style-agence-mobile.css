@@ -1503,7 +1503,6 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
     color: #0645F9;
 }
 
-.slider [class*="slider-btn"] .icon,
-.slider [class*="slider-btn"] .icon-catal {
-    color: white;
+.mobile-partner-gallery .slider-pagin-btn .btn .icon {
+    color: #0645F9;
 }
