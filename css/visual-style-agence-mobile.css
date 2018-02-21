@@ -416,6 +416,7 @@ h3, h4 {
 
 .mn-menu-submenu .mn-link.is-active {
     background: #0645F9;
+    color: #fff;
 }
 .mn-menu-submenu .mn-link-text:before {
     display: none;
