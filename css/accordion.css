@@ -5,7 +5,8 @@
     .accordion-horizontal --> .ah-##
 
 */
-.accordion-horizontal {
+
+/* .accordion-horizontal {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -17,7 +18,7 @@
           flex-direction: row;
   height: 300px;
 }
-/* item */
+
 .ah-item {
   position: relative;
   min-height: 285px;
@@ -56,7 +57,7 @@
           flex: 1;
   overflow: hidden;
 }
-/* button */
+
 .ah-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -98,7 +99,7 @@
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
 }
-/* title */
+
 .ah-item-title {
   font-size: 2.05rem;
   text-transform: uppercase;
@@ -111,7 +112,7 @@
   margin-top: 0.25em;
   background: #f1d911;
 }
-/* link "read more" */
+
 .ah-link a {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
@@ -122,3 +123,5 @@
 .ah-link a:hover {
   color: #ff8200;
 }
+
+*/
