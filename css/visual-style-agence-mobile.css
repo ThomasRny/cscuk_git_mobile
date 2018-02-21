@@ -1496,9 +1496,14 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
 /* Partner Gallery */
 
 .mobile-partner-gallery .slider-pagin-btn .btn {
-    background-color: #0645F9;
+    background-color: transparent;
 }
 
 .pg-pagin-nb .active {
     color: #0645F9;
+}
+
+.slider [class*="slider-btn"] .icon,
+.slider [class*="slider-btn"] .icon-catal {
+    color: white;
 }
