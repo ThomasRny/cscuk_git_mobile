@@ -141,8 +141,11 @@ a.txt-lightblue:hover {
 
 /* HEADINGS */
 
-h2, h2.main-title, h2.la-main-title, .main-title-with-link > .main-title {
-    font-size: 2.8rem !important;
+h2, h2.main-title,
+h2.la-main-title,
+.main-title-with-link > .main-title,
+.faq-main-title {
+    font-size: 1.8rem !important;
     font-family: 'Poppins', sans-serif !important;
     font-weight: 600;
     color: #001E60 !important;
@@ -575,6 +578,14 @@ h3, h4 {
     text-align: center;
     border-bottom: 1px solid #EBE6E6;
     padding-bottom: 2rem;
+}
+
+.landing-page-quicklinks i:before {
+    color: #0645F9;
+}
+
+.liens-footer i.icon:before{
+    color: white;
 }
 
 .landing-page-quicklinks .ql-list {
@@ -1510,4 +1521,70 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
 
 .mobile-partner-gallery .slider-pagin-btn .btn .icon {
     color: #0645F9;
+}
+
+/* FAQ */
+
+.block-page.faq {
+    margin-top: 20px;
+}
+
+.faq-content {
+    padding: 0 2rem;
+}
+
+.fc-item-nb, .fs-item-nb {
+    background: #0645F9;
+    line-height: 2rem;
+}
+
+.fc-title {
+    font-size: 1.8rem !important;
+}
+
+.fc-box .inside {
+    padding: 0;
+}
+
+h3.fc-item-title {
+    font-size: 1.5rem !important;
+}
+
+.fc-item {
+    padding: 2rem 0;
+    border-bottom: 1px solid #0645F9;
+}
+
+.fc-item-link:focus, .fc-item-link:hover {
+    text-decoration: none;
+    border-bottom: 0;
+}
+
+.fc-item.fc-item:nth-child(odd),
+.fc-item.fc-item:nth-child(even) {
+    background: none;
+}
+
+.fc-item-link:focus .icon, .fc-item-link:hover .icon {
+    color: #0645F9;
+}
+
+.fc-item-content {
+    padding: 0;
+}
+
+.fc-item-link {
+    font-family: "Roboto", sans-serif;
+    padding-left: 20px;
+}
+
+.fc-item-link .icon {
+    margin-left: -20px;
+    margin-top: -2px;
+    position: absolute;
+}
+
+.faq-sub-title {
+    font-size: 1.7rem;
+    font-weight: normal;
 }
