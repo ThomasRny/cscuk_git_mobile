@@ -145,13 +145,17 @@ h2, h2.main-title,
 h2.la-main-title,
 .main-title-with-link > .main-title,
 .faq-main-title {
-    font-size: 1.8rem !important;
+    font-size: 2.8rem !important;
     font-family: 'Poppins', sans-serif !important;
     font-weight: 600;
     color: #001E60 !important;
     text-transform: none !important;
     margin-bottom: 0;
     line-height: 3.2rem;
+}
+
+h2, .h2-like {
+    border-bottom: 0;
 }
 
 h2.la-main-title {
