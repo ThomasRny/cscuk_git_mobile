@@ -361,6 +361,11 @@ h3, h4 {
 
 /* MENU */
 
+.sb-menu-trigger {
+    right: 0;
+    left: inherit;
+}
+
 .sb-menu-btn {
     position: inherit;
     top: inherit;
