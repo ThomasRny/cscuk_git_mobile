@@ -186,6 +186,7 @@ a.txt-lightblue:hover {
     position: relative;
     margin-left: 40px;
     top: 40px;
+    float: right;
 }
 
 /* HEADINGS */
@@ -728,6 +729,13 @@ h5, h5.like {
     position: relative;
 }
 
+.landing-page-edito:after {
+    content: "";
+    display: table;
+    clear: both;
+    border-collapse: collapse;
+}
+
 /* BLOCKS */
 
 .block-page{
@@ -1183,6 +1191,7 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
 .gla-item > a {
     height: 100%;
     border: 1px solid #DDDDDD;
+    background: white;
 }
 
 .gla-item:first-child {
