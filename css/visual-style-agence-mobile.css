@@ -78,6 +78,55 @@ a:hover, .link-read-more:hover {
     left: -10px;
 }
 
+.lien1 {
+    background: #F7C452;
+    color: #fff;
+    padding: 1rem;
+}
+
+.lien1:hover, .lien1:focus,
+.lien2:hover, .lien2:focus{
+    border: none;
+    color: white;
+}
+
+.lien2 {
+    background: #001E6F;
+    color: #fff;
+    padding: 1rem;
+}
+
+.lien3, .lien3:hover {
+    border-bottom : 2px solid #F7C452;
+    color: #001E6F;
+}
+
+.lien4 {
+    border-bottom: 2px solid #F7C452;
+    color: #001E60;
+    padding-bottom: 4px;
+    position: relative;
+}
+
+.lien4:hover {
+    border-bottom: 2px solid #F7C452;
+    color: #001E60;
+}
+
+.lien4:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -28px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 21px;
+    height: 21px;
+    background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgdmlld0JveD0iMCAwIDMyIDMyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDpub25lO3N0cm9rZTojMDAwO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MnB4O308L3N0eWxlPjwvZGVmcz48dGl0bGUvPjxnIGRhdGEtbmFtZT0iMTItRG93bmxvYWQiIGlkPSJfMTItRG93bmxvYWQiPjxwb2x5bGluZSBjbGFzcz0iY2xzLTEiIHBvaW50cz0iMSAxOSAxIDMxIDMxIDMxIDMxIDE5Ii8+PHBvbHlsaW5lIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSIyNCAxNiAxNiAyNCA4IDE2Ii8+PGxpbmUgY2xhc3M9ImNscy0xIiB4MT0iMTYiIHgyPSIxNiIgeTE9IjI0Ii8+PC9nPjwvc3ZnPg==');
+    background-repeat: no-repeat;
+}
+
 /* COLORS */
 
 .landing-page-quicklinks .ql-list li:nth-child(4) > a,
