@@ -203,6 +203,10 @@ h2.la-main-title,
     line-height: 3.2rem;
 }
 
+.main-title-with-link{
+    border:0;
+}
+
 h2, .h2-like {
     border-bottom: 0;
 }
