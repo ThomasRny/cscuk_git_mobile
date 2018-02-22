@@ -898,6 +898,7 @@ h5, h5.like {
     background: #1A4BD8;
     font-family: "Poppins", sans-serif;
     height: 100%;
+    width: 100%;
     content: "";
     display: table;
     clear: both;
