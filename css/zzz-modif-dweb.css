@@ -4,7 +4,7 @@
 .article-wrapper .article-navigation .an-item-next .an-item-content {
     padding: 0px 0px 0px 0px;
     text-align: right;
-    width: 61%;
+    width: 100%;
     display: inline-block;
     left: 0;
     margin-left: -20px;
@@ -19,6 +19,17 @@
     color:#ffffff;
 }
 
+.article-wrapper .article-navigation .an-item-next .an-item-title {
+    padding: 2.2em 4em 2.2em 1.6em;
+}
+
+.article-wrapper .article-navigation .an-item-previous .an-item-title {
+    padding: 2.2em 1.6em 2.2em 4em;
+}
+
+.article-wrapper .article-navigation .an-item-previous, .article-wrapper .article-navigation .an-item-next {
+    width: 100%;
+}
 .article-wrapper .article-navigation .an-list {
     display: block;
     width: 100%;
@@ -83,7 +94,6 @@
     padding: 0px;
 }
 .article-navigation .an-item-next .an-item-content .icon {
-    left: 7.3em;
     transition:ease-in-out 0.5s;
     -webkit-transition:ease-in-out 0.5s;
     -moz-transition:ease-in-out 0.5s;
@@ -127,7 +137,7 @@
 .article-wrapper .article-navigation .an-item-previous .an-item-content {
     padding: 0px 0px 0px 0px;
     text-align: right;
-    width: 61%;
+    width: 100%;
     display: inline-block;
     left: 0px;
     margin-left: -6px;
@@ -141,7 +151,6 @@
   text-align:left;
 }
 .article-navigation .an-item-previous .an-item-content .icon {
-    right: 8.7em;
     transition:ease-in-out 0.5s;
     -webkit-transition:ease-in-out 0.5s;
     -moz-transition:ease-in-out 0.5s;
@@ -159,6 +168,9 @@
 }
 .an-item-previous a:hover .an-item-content {
     margin-right: 0em;
+}
+.article-wrapper .article-navigation .an-item-publication{
+display:none;
 }
 
 /**** SITEMAP ****/
