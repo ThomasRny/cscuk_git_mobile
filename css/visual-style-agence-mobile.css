@@ -1587,6 +1587,10 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
     line-height: 2rem;
 }
 
+.fs-item-link .icon {
+    color: #0645F9;
+}
+
 .fc-title {
     font-size: 1.8rem !important;
 }
