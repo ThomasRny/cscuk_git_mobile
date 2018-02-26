@@ -1030,6 +1030,82 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
     display: none;
 }
 
+
+.newsletter-form .loading-inner .shape {
+    width: 10px;
+    height: 10px;
+    background-color: #F7C452;
+}
+
+.newsletter-form .loading-inner {
+    display: inline-block;
+}
+
+.nf-loading .loading-txt {
+    margin: 0;
+}
+
+.nf-loading {
+    padding: 20px;
+}
+
+.nf-main-content {
+    text-align: right;
+}
+
+.nf-main-content p {
+    margin-top: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nf-success-msg {
+    color: #fff;
+    padding: 0 20px;
+}
+
+.nf-main-content .nf-success-msg.has-error .icon {
+    color: #F7C452;
+    font-size: 2rem;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    margin: 20px 0;
+    margin-top: 0;
+    clear: both;
+    top: 10px;
+    position: relative;
+}
+
+.nf-main-content .nf-success-msg.has-error .icon:before {
+    vertical-align: top;
+    color: #F7C452;
+}
+
+.nf-result {
+    /* top: 50%; */
+    position: relative;
+    /* transform: translateY(-50%); */
+}
+
+.nf-result .btn-primary {
+    color: white;
+    margin-left: 1rem;
+    padding: 1rem
+}
+
+.nf-result .btn-primary:hover {
+    color: #F7C452;
+    box-shadow: none;
+}
+
+.nf-result .btn-primary {
+    display: block;
+    clear: both;
+    border: 1px solid white;
+    margin: 20px auto;
+}
+
 /* Liens footer */
 
 .liens-orga-footer {
