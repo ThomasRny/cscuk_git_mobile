@@ -266,3 +266,8 @@ a.cc-cookie-link {
 	color:#ffffff;
 }
 
+/**** SUPPR TITRE THEME FAQ ****/
+
+.faq .faq-sub-title, .faq .js-sna-menu, .faq .fc-title {
+    display: none;
+}
